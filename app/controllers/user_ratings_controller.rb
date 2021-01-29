@@ -42,6 +42,6 @@ class UserRatingsController < ApplicationController
 
 
     def user_rating_params
-      params.require(:user_rating).permit(:rating, :hero_journey, :power_fantasy, :world_building)
+      params.require(:user_rating).permit(:rating, :hero_journey, :power_fantasy, :world_building, :manga_id)
     end
 end
